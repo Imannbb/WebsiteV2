@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Birdies</title>
+    <style>
+      :root{
+        --card-w:270px;
+        --gap:120px;
+      }
+      html,body{
+        height:100%;
+        margin:0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background: #ffc7e0;
+        color:#111;
+      }
+
+      .wrap{
+        max-width:1100px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+
+      h1{
+        text-align:center;
+        margin:0;
+        font-size:2.2rem;
+      }
+      h2.subtitle{
+        text-align:center;
+        margin:6px 0 26px 0;
+        font-size:1.3rem;
+      }
+
+      .images-row{
+        display:flex;
+        justify-content:center;
+        gap:var(--gap);
+        align-items:flex-start;
+      }
+      .card{
+        width:var(--card-w);
+      }
+      .card img{
+        width:100%;
+        height:435px;
+        object-fit:cover;
+        border:7px solid rgba(241,44,199,0.47);
+        border-radius:15px;
+        display:block;
+      }
+
+      .names-row{
+        display:flex;
+        justify-content:center;
+        gap:var(--gap);
+        margin-top:12px;
+        align-items:flex-start;
+      }
+      .name{
+        width:var(--card-w);
+        text-align:center;
+        font-size:1.2rem;
+        font-weight:bold;
+        margin:0;
+      }
+
+      .center-title{
+        text-align:center;
+        margin:20px 0 6px 0;
+        font-size:1.5rem;
+      }
+
+      .lists-row{
+        display:flex;
+        justify-content:center;
+        gap:var(--gap);
+        margin-top:10px;
+      }
+      .list-col{
+        width:var(--card-w);
+        padding-left:18px; 
+      }
+
+      /* === UPDATED: bigger list text (applies to both columns) === */
+      .list-col ul{
+        margin:8px 0 30px 0;
+        padding-left:18px;
+        line-height:1.5;
+        font-size:1.3rem;     /* <- BIGGER text */
+        font-weight:500;      /* slightly bolder for readability */
+      }
+      .list-col ul li{
+        margin:8px 0;         /* space between items */
+      }
+
+      @media (max-width:760px){
+        .images-row, .names-row, .lists-row{
+          flex-direction:column;
+          gap:18px;
+          align-items:center;
+        }
+        .list-col{ padding-left:6px; width:80%; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Birdies</h1>
+      <h2 class="subtitle">2 Little Lovebirds</h2>
+
+      <div class="images-row">
+        <div class="card">
+          <img src="https://i.ibb.co/VYjqtkDZ/PHOTO-2025-11-12-21-08-27-7.jpg" alt="Pickles">
+        </div>
+
+        <div class="card">
+          <img src="https://i.ibb.co/xyLy62D/PHOTO-2025-11-12-21-08-27-2.jpg" alt="Sunny">
+        </div>
+      </div>
+
+      <div class="names-row">
+        <p class="name">Pickles (1 year old, male)</p>
+        <p class="name">Sunny (2 years old, female)</p>
+      </div>
+
+      <h2 class="center-title">All About Them!</h2>
+
+      <div class="lists-row">
+        <div class="list-col">
+          <ul>
+            <li>bites hard</li>
+            <li>blows kisses</li>
+            <li>interested in anything and everything</li>
+            <li>loves noodles</li>
+            <li>eats my food</li>
+            <li>loves going in my shirt</li>
+            <li>loves cuddling</li>
+            <li>loves being pet</li>
+            <li>social</li>
+            <li>poops everywhere</li>
+            <li>always curious</li>
+          </ul>
+        </div>
+
+        <div class="list-col">
+          <ul>
+            <li>calm</li>
+            <li>chirps so much</li>
+            <li>shy</li>
+            <li>bites hard</li>
+            <li>loves noodles</li>
+            <li>eats my food</li>
+            <li>loves being pet</li>
+            <li>antisocial</li>
+            <li>poops everywhere</li>
+            <li>easily scared</li>
+            <li>very clever</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align: center; margin: 40px auto 60px auto; padding: 0 20px;">
+      <img 
+        src="https://i.ibb.co/v64DtcHk/Bird.jpg"
+        style="width: 100%; max-width: 700px; border: 10px solid rgba(241,44,199,0.47); border-radius: 20px;"
+        alt="Extra Bird Picture">
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+img {
+    width: 270px;
+    margin: 35px;
+    border-radius: 15px;
+    height: 435px;
+    border: 7px solid rgba(241, 44, 199, 0.473);
+}
+
+body {
+    text-align: center;
+    background: rgba(255, 15, 175, 0.26);
+}
+
+
+li {
+    font-size: 20px;
+    margin: 6px 0;
+    font-weight: 500;
+}
